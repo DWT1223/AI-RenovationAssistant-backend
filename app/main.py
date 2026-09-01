@@ -23,7 +23,8 @@ from app.routers import (
     style_router,
     collect_router,
     ai_router,
-    upload_router
+    upload_router,
+    chat_router
 )
 
 # 获取配置
@@ -66,6 +67,7 @@ app.include_router(style_router)
 app.include_router(collect_router)
 app.include_router(ai_router)
 app.include_router(upload_router)
+app.include_router(chat_router)
 
 
 @app.on_event("startup")

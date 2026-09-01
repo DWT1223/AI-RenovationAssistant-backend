@@ -11,6 +11,7 @@ from app.routers.style import router as style_router
 from app.routers.collect import router as collect_router
 from app.routers.ai import router as ai_router
 from app.routers.upload import router as upload_router
+from app.routers.chat import router as chat_router
 
 __all__ = [
     "auth_router",
@@ -22,5 +23,6 @@ __all__ = [
     "style_router",
     "collect_router",
     "ai_router",
-    "upload_router"
+    "upload_router",
+    "chat_router"
 ]

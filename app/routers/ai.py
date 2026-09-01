@@ -322,6 +322,7 @@ async def save_render_record_json(
     return Response.success(data={
         "record_id": record.id
     })
+@router.get("/render/records")
 async def get_render_records(
     page: int = Query(1, ge=1),
     page_size: int = Query(20, ge=1, le=100),
